@@ -1,65 +1,59 @@
-// ada tipe data static 
-//ada tipe dynamic 
-//tipe data stattic harus dideklarasikan misalnya int,double dan lainlain
-//tipe data dynamic tidak harus dideklarasikan misalnya di javascript
-//di javascript tidak ada error saat operasi matematika yang ada hanya infinity dan nan(not a number)
+// ada perbandingan dalam sebuah yaitu perbandingan  dengan menggunakan  ===
+//ada perbdandingan dalam sebuah yaitu perbandingan dengan mengunakan ==
+// ada tidak sama dengan ditulis dengan !=
+//ada lebih besar ditulis dengan > lebih kecil dengan <
+//ada juga lebih besar sama dengan >= dan lebih kecil sama dengan <= 
 
+let a=9
+let b=10
+console.log(a>=b)//false karena 9 itu kecil
+console.log(a!=b)//true karena 9 kan emang tidak sama 
+let c=10
+let d=10
+console.log(c>=d)//true karena kan sama 
+console.log(c<=d)//true karena kan sama 
+console.log(7>7)//false karena kan 7 itu kan tidak ada pakau sama dengan
+console.log(8<8)//false karenakan emang tidak sama 
+
+//or atau ||
+//jika ada nilai yang dibandingkan kalau salah satuhnya benar maka true
+//jika salah semuanya jika dibdaningkan maka false
 //example
-let a=12
-console.log(a/0)//infinity
-console.log(a/NaN)//nan(not a number)
-console.log(a/'anjs')//nan(not a number) karena di bagi dengan string 
+console.log(c>=d||7>7)//true karena perbandingan seblah kiri benar 
+//dan sebelah kanan salah tapi karena benar sala 
+//satunya berati true
+console.log(8>=8||10>5)//true karena perbandingan seblah kiri benar 
+//dan sebelah kanan benar dan itu benar 
+console.log(9>9||5>c)//false karena perbandingan seblah kiri salah
+//sebelah kanan salah jika sama salah pasti salah 
+let lopi=true
+let tanti
+console.log(lopi)//true karena bolan true
+console.log(!lopi)//false karena kebalikan dari tru
+console.log(lopi!=null)//true karena tidak sama 
+console.log(lopi!==null)//true karena tidak sama 
+console.log(lopi!==tanti)//tru karena tidak sama
 
+//and atau &&
+//jika nilai yang dibandingkan ada aja salah satu yang salah maka nilai tersebut salah
+//jadi harus nilai sama sama true
+//exampel
+console.log(c==d && b>a)//true karena nilai kiri dan kanan nya benar semua 
+console.log(12<10 && c==10)//false karena salah satu nilainya salah
+console.log(19<10 && 19==10)//false karena nilainya sama sama salah  
+//?? ini untuk mengambil nilai yang ada jika dia undifine nilai nya akan dicari yang ada 
+//exampl
+let nando
+let sayangku=null
+let payah='s'
+let kuah=0
+console.log(nando??sayangku)//diambil null karena yang atas undifine 
+console.log(sayangku??nando)//diambil langsung karena  nilainya null
+console.log(kuah??payah)//diambil 0 karena dia yang dieskusi 0
+console.log(payah??nando)//diambil s karen yang pertma diammbil s
+console.log(a??sayangku)//nilai yaang dieskusi 9
+console.log(a??payah)//nilain yang diesjusi 9
+console.log(payah??a)//nilainya akan di eskusi s
+console.log(nando??a)//nil
 
-
-
-// beda nya batctik yang sebelah angka 1 `` untuk memeperoleh nilai ${}
-//kalau "" dan '' hanya untuk membuat string
-//example
-let tuti="1+3"
-let sayang1='1+4'
-let result=`${1+3}`
-console.log(result)//ini untuk backtik
-console.log(`${result} yok ${tuti} tambah ${9*7}`)
-console.log(sayang1)
-
-
-//tipe data bolean adalah logika antara true dan false
-//tipe data null tipe data yang berisi data kosong
-//example
-let bilangansatu=8
-let bilangandua=9
-let kosong=null
-let kosongdua=
-console.log( bilangansatu>bilangandua ) //false karena 8 kecil 
-console.log( bilangandua>bilangansatu ) //true karena 9 besar
-console.log(kosong)//null atau kosong
-console.log(kosongdua)//null atau undfine tidak di defensikan 
-//tipe data primitif itu int bolean char float
-//tipe data non primitif array obejkdan lalin lain
-//example object
-const babi={
-nama:"shs",
-kelas:12,
-bool:true,
-say:`${9*7}`
-
-}
-
-console.log(typeof(babi))//ini object//typeof digunakan untuk mengwtagui jenis tipe data
-const babidua=[
-{nama:"shs",
-    kelas:12
-},
-{nama:"as",
-kelas:7}
-,
-{
-    nama:"s",
-    kelas:22
-}]
-console.log(typeof(babidua))//ini adalah contoh array didalam objek 
-
-let anjay = ["ah","as","at","s"]
-console.log(typeof(anjay))//ini adalah contoh array
 
