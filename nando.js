@@ -54,6 +54,6 @@ console.log(payah??nando)//diambil s karen yang pertma diammbil s
 console.log(a??sayangku)//nilai yaang dieskusi 9
 console.log(a??payah)//nilain yang diesjusi 9
 console.log(payah??a)//nilainya akan di eskusi s
-console.log(nando??a)//nil
+console.log(nando??a)//nilainya yang diambil 9 
 
 
