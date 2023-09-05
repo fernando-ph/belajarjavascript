@@ -37,7 +37,7 @@ console.log(kosong)//null atau kosong
 console.log(kosongdua)//null atau undfine tidak di defensikan 
 //tipe data primitif itu int bolean char float
 //tipe data non primitif array obejkdan lalin lain
-
+//example object
 const babi={
 nama:"shs",
 kelas:12,
@@ -46,6 +46,20 @@ say:`${9*7}`
 
 }
 
-console.log(babi)
+console.log(typeof(babi))//ini object//typeof digunakan untuk mengwtagui jenis tipe data
+const babidua=[
+{nama:"shs",
+    kelas:12
+},
+{nama:"as",
+kelas:7}
+,
+{
+    nama:"s",
+    kelas:22
+}]
+console.log(typeof(babidua))//ini adalah contoh array didalam objek 
 
+let anjay = ["ah","as","at","s"]
+console.log(typeof(anjay))//ini adalah contoh array
 
