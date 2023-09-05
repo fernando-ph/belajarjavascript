@@ -9,3 +9,16 @@ let a=12
 console.log(a/0)//infinity
 console.log(a/NaN)//nan(not a number)
 console.log(a/'anjs')//nan(not a number) karena di bagi dengan string 
+
+
+
+
+// beda nya batctik yang sebelah angka 1 `` untuk memeperoleh nilai ${}
+//kalau "" dan '' hanya untuk membuat string
+//example
+let tuti="1+3"
+let sayang1='1+4'
+let result=`${1+3}`
+console.log(result)//ini untuk backtik
+console.log(`${result} yok ${tuti} tambah ${9*7}`)
+console.log(sayang1)
