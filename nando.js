@@ -1,27 +1,11 @@
-//var adalah tempat penampaung data yang dapat dikelarasikan ulang dan juga dapat diubah nilainya
-//example var 
-var a=12;
-var a=14;
-console.log(a);
+// ada tipe data static 
+//ada tipe dynamic 
+//tipe data stattic harus dideklarasikan misalnya int,double dan lainlain
+//tipe data dynamic tidak harus dideklarasikan misalnya di javascript
+//di javascript tidak ada error saat operasi matematika yang ada hanya infinity dan nan(not a number)
 
-//let tidak dapat di deklarasikan ulang tapi dapat diubah nilaiya
-//example let
-let b=12;
-//let b=14;tidak dapat dideklari ulang tapi bisa mengubah nilai 
-b=14;
-console.log(b)
-//const tidak dapat di deklarasikan ulang dan tidak dapat mengubah nilainya 
-const c=13;
-//cons c=16; tidak dapat di deklarasikan 
-//c=19;tidak dapat mengubah nilai
-console.log(c)
-
-//tapi const dapat menambah atau mengapus sebuah nilai nya
-//mengubah objek
-const aw={a:1,bana:"as"}
-aw.age=13
-//mengubah array 
-console.log(aw)
-const aws=[1,2,3,4]
-aws.push=(13)
-console.log(aws)
+//example
+let a=12
+console.log(a/0)//infinity
+console.log(a/NaN)//nan(not a number)
+console.log(a/'anjs')//nan(not a number) karena di bagi dengan string 
