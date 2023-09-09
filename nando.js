@@ -9,9 +9,9 @@ else{
 }
 
 let gaol=-1
-if(gaol>=20){
+if(gaol>=20){//jika konisi pertama terpenuhi dia akan masuk ke kondisi 2 
     if(nando %2==0){
-        console.log(nando+gaol)//ini adalah if didalam if alaias bersarang
+        console.log(nando+gaol)//ini adalah if didalam if alias if bersarang
 
     }else if(19<gaol){
         console.log("gak ")
@@ -22,7 +22,7 @@ if(gaol>=20){
     }
 
 
-}else{
+}else{//jika kondisi tidak terpenuhui maka masuk ke sini
 console.log("input salah")
 }
 
