@@ -52,6 +52,41 @@ for (let nasoso in taisan){
     console.log(taisan[nasoso])//menampilannilai dalam sebua taisan
 }
 
+//array
+let angkaas=[1,2,3,4]
+console.log(angkaas)//memngerpint array
+console.log(angkaas[2])//mencari data yang ada di indeks 2
+//indeks 0=1
+//indeks 1=2
+//indeks 2=3
+//indeks 3=4
+angkaas[2]='2'//menganti dariindeks 2
+console.log(angkaas)//menampilkan indeks 2 yang sudah di ganti 
+angkaas[8]=true//menambah indeks ke 8 dan pada indeks sebelumnya kosong karena belum diberikan
+console.log (angkaas)//menampilakn tambahan indeks
+angkaas[6]=true//menmabha ideks ke 6
+console.log (angkaas)//menampilkan tambahahn indek
+angkaas[5]=true//menambahkan indeks ke 5
+console.log (angkaas)//menampilkan indeks ke 5
+let papi=angkaas.pop()//menyimpan ke dalam variabel
+console.log (papi)//menghapus dari variabel
+angkaas.pop()//mengapus secara lansgung
+console.log (angkaas)//baru lansging di print
+console.log (angkaas.length)//mengetahui panjangnya berapa 
 
 
-
+//mengabung aray dengan concat
+let cocok=[true,false,9,"s"]
+let kumbang=["a",78]
+let bui=cocok.concat(kumbang)//variable penyimpannya
+console.log(bui)//mengabungan kedua array dari cocok dan kumbang
+let postion=cocok.indexOf(false)//membuat darimana inkdes tersebut 
+console.log(postion)//menampilkan dari indeks mana
+let biasa=kumbang.includes(78)//untuk mengecek apakah ada nilai 78 di array kumbang dan ada jadi true
+console.log(biasa)
+let biasao=kumbang.includes(908)//untuk mengecek apakah ada nilai 908 di array kumbang dan tidak ada jadi falsse
+console.log(biasao)
+let ninja=kumbang.slice(0)//membuat slice baru 
+console.log(ninja)
+let cacing=cocok.sort()//mengurtkan data dari awal
+console.log(cacing)
