@@ -1,92 +1,35 @@
-//objek itu adalah suatu yang terdiri dari kunci dan isinya
-// misalnya kucing dia berwana biru jadi kucingnya jadi kunci
-//dan warna kucing adalah nilainya
+//penggunan if adalah untuk membutat logika atau kondisi jika terpenuhi maka jalan jika tidak maka akan jalan dikonsis alain
+let nando=12
 
-const siswa={
-    nama: 'nando',
-    umur:13,
-    alamat:"as"
+if(nando==12){
+    console.log(nando+12)//ini adalah if aja 
 }
-siswa.nama="mam"//berikut cara menambahkan objek 
-siswa.lama=13//berikut cara menambahkan objek
-delete siswa.nama//berikut cara menghapsu  obj
-console.log(siswa)//memanggil semua kunci pada aray
-console.log(siswa.alamat)//memanggil 1 kunci pada array
-console.log(siswa['umur'])//memanggil 1 kunci dengan kurung siku
-//jika kita memanggil kunci yang dihapus maka akan terjadi undifine
+else{
+    console.log("input salah ")
+}
 
+let gaol=-1
+if(gaol>=20){
+    if(nando %2==0){
+        console.log(nando+gaol)//ini adalah if didalam if alaias bersarang
 
+    }else if(19<gaol){
+        console.log("gak ")
 
+    }else{
+        console.log("ulang")
 
-//membuat fungsi objek
-function Aanakan(cucok,bui,sayang) {
-    return{
-        cucok: cucok,//bisa dipanggil lagi menggunakna key nya
-        bui,//bisa dipanggil tanpa menggunakan key //dan setiap mau menambahkan key harus ada tanda koma
-        sayang
     }
+
+
+}else{
+console.log("input salah")
 }
 
-let coki=Aanakan("s",12,true)//menyimpannya di varible 
-console.log(coki)//memanggil fungsinya dengan variabel
-console.log(Aanakan("s",true,90))//bisa memanggillnya tanpa variabel
 
+///menjalan logika di dalam variavble
 
-let banyak ={
-
-}
-console.log(banyak.noProperty===undefined)//mengecek apakkah dalam kondisi tersebut ada property atau kata kunci
-
-const taisan={
-    gaji:true,
-    santai:"s",
- bola:false,
- nafus:"ss"
-}
-console.log('santai' in taisan)//mengecek apakah ada properti bernama santai ternyata ada bernilai true
-
-let tidak ='nafus'
-console.log(tidak in taisan)//mengecek dengan menyimpan variable tidak terus di console logkan bernilai true
-for (let nasoso in taisan){
-    console.log(nasoso)//menampilkan kata kuncinya dalam taisan 
-    console.log(taisan[nasoso])//menampilannilai dalam sebua taisan
-}
-
-//array
-let angkaas=[1,2,3,4]
-console.log(angkaas)//memngerpint array
-console.log(angkaas[2])//mencari data yang ada di indeks 2
-//indeks 0=1
-//indeks 1=2
-//indeks 2=3
-//indeks 3=4
-angkaas[2]='2'//menganti dariindeks 2
-console.log(angkaas)//menampilkan indeks 2 yang sudah di ganti 
-angkaas[8]=true//menambah indeks ke 8 dan pada indeks sebelumnya kosong karena belum diberikan
-console.log (angkaas)//menampilakn tambahan indeks
-angkaas[6]=true//menmabha ideks ke 6
-console.log (angkaas)//menampilkan tambahahn indek
-angkaas[5]=true//menambahkan indeks ke 5
-console.log (angkaas)//menampilkan indeks ke 5
-let papi=angkaas.pop()//menyimpan ke dalam variabel
-console.log (papi)//menghapus dari variabel
-angkaas.pop()//mengapus secara lansgung
-console.log (angkaas)//baru lansging di print
-console.log (angkaas.length)//mengetahui panjangnya berapa 
-
-
-//mengabung aray dengan concat
-let cocok=[true,false,9,"s"]
-let kumbang=["a",78]
-let bui=cocok.concat(kumbang)//variable penyimpannya
-console.log(bui)//mengabungan kedua array dari cocok dan kumbang
-let postion=cocok.indexOf(false)//membuat darimana inkdes tersebut 
-console.log(postion)//menampilkan dari indeks mana
-let biasa=kumbang.includes(78)//untuk mengecek apakah ada nilai 78 di array kumbang dan ada jadi true
-console.log(biasa)
-let biasao=kumbang.includes(908)//untuk mengecek apakah ada nilai 908 di array kumbang dan tidak ada jadi falsse
-console.log(biasao)
-let ninja=kumbang.slice(0)//membuat slice baru 
-console.log(ninja)
-let cacing=cocok.sort()//mengurtkan data dari awal
-console.log(cacing)
+let bunda=12
+let a=bunda==13
+console.log(a)//a sebagai variable penampung dan bunda sebaagi pembanding dengan 13 jadi jika dia bunda sama dengan 13
+//akan true tapi dai salah dia cuma 12 makanya false
